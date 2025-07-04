@@ -8,7 +8,7 @@ function GetAll() {
   
     const getAllUserData = async () => {
         try {
-            const {data} = await axios.get("http://localhost:5000/api/getAllUser");
+            const {data} = await axios.get("https://sbi-passbook-9q64.onrender.com/api/getAllUser");
             // console.log(data);
             setGetAllUser(data);
         } catch (error) {
@@ -19,7 +19,7 @@ function GetAll() {
 
     const handleDeleted = async (id) => {
         try {
-          const {data} = await axios.post(`http://localhost:5000/api/deleteUser/${id}`);
+          const {data} = await axios.post(`https://sbi-passbook-9q64.onrender.com/api/deleteUser/${id}`);
           toast.success(data.message);
        
           setGetAllUser((getAllUser) => getAllUser.filter((card) => card._id !== id));

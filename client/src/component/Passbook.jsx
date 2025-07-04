@@ -36,7 +36,7 @@ const handleSubmit = async (e) => {
   formData.append("image", image);
   
   try {
-    const {data} = await axios.post("http://localhost:5000/api/addUser", formData, {
+    const {data} = await axios.post("https://sbi-passbook-9q64.onrender.com/api/addUser", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         

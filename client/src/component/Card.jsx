@@ -9,7 +9,7 @@ function Card() {
 
   const getUserData = async () => {
     try {
-      const {data} = await axios.get(`http://localhost:5000/api/getUser/${id}`)
+      const {data} = await axios.get(`https://sbi-passbook-9q64.onrender.com/api/getUser/${id}`)
       // console.log(data);
       setGetUser(data.user);
     } catch (error) {
