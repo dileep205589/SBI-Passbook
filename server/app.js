@@ -22,7 +22,7 @@ app.use(fileUpload({
 
 // CORS Setup
 app.use(cors({
-  origin: "https://lucky-panda-9c39d9.netlify.app/", // React frontend origin
+  origin: "https://sbi-passbook-1-we6u.onrender.com/", // React frontend origin
   credentials: true
 }));
 
@@ -36,5 +36,3 @@ app.use('/api', webRoutes);
 app.listen(port, () => {
   console.log(`Server is listening at http://localhost:${port}`);
 });
-
-
