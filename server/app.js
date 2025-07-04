@@ -22,7 +22,7 @@ app.use(fileUpload({
 
 // CORS Setup
 app.use(cors({
-  origin: "https://sbi-passbook-1-we6u.onrender.com/", // React frontend origin
+  origin: "http://localhost:3000", // React frontend origin
   credentials: true
 }));
 
