@@ -22,7 +22,7 @@ app.use(fileUpload({
 
 // CORS Setup
 app.use(cors({
-  origin: "http://localhost:3000", // React frontend origin
+  origin: "https://lucky-panda-9c39d9.netlify.app/", // React frontend origin
   credentials: true
 }));
 
