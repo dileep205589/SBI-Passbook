@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.CardImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PersonImg{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardDetails{
+    line-height: 0.8;
+}
+
+.tableContainer{
+    width: 100%;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.navbar{
+  background-color: rgba(221, 255, 127, 0.562);
+}
+
