@@ -8,6 +8,7 @@ const webRoutes = require('./routes/web');
 
 dotenv.config();
 
+
 const app = express();
 const port = process.env.PORT || 4000;
 
@@ -21,7 +22,7 @@ app.use(fileUpload({
 
 // CORS Setup
 app.use(cors({
-  origin: "https://symphonious-syrniki-7cd91d.netlify.app/", // React frontend origin
+  origin: "http://localhost:3000", // React frontend origin
   credentials: true
 }));
 
