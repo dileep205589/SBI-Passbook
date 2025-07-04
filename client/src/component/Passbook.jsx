@@ -36,7 +36,7 @@ const handleSubmit = async (e) => {
   formData.append("image", image);
   
   try {
-    const {data} = await axios.post("/api/addUser", formData, {
+    const {data} = await axios.post("http://localhost:5000/api/addUser", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         
@@ -51,7 +51,7 @@ const handleSubmit = async (e) => {
 
     
   } catch (error) {
-    console.log("Error submitting form:", error);
+    console.error("Error submitting form:", error);
     
   }
 }

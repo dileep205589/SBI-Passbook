@@ -8,7 +8,7 @@ function GetAll() {
   
     const getAllUserData = async () => {
         try {
-            const {data} = await axios.get("/api/getAllUser");
+            const {data} = await axios.get("http://localhost:5000/api/getAllUser");
             // console.log(data);
             setGetAllUser(data);
         } catch (error) {
@@ -19,7 +19,7 @@ function GetAll() {
 
     const handleDeleted = async (id) => {
         try {
-          const {data} = await axios.post(`/api/deleteUser/${id}`);
+          const {data} = await axios.post(`http://localhost:5000/api/deleteUser/${id}`);
           toast.success(data.message);
        
           setGetAllUser((getAllUser) => getAllUser.filter((card) => card._id !== id));

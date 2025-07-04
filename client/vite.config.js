@@ -6,11 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server: { 
      port: 3000,
-    proxy: {
-      '/api': {
-        target: 'https://sbi-passbook-2rjb.onrender.com/',
-        changeOrigin: true,
-      },
-    },
+
   },
 })
